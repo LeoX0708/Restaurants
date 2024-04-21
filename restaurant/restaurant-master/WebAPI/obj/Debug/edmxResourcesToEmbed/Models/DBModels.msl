@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBModelsStoreContainer" CdmEntityContainer="DBModel">
+    <EntitySetMapping Name="BanAns">
+      <EntityTypeMapping TypeName="DBModels.BanAn">
+        <MappingFragment StoreEntitySet="BanAn">
+          <ScalarProperty Name="Ban_ID" ColumnName="Ban_ID" />
+          <ScalarProperty Name="Ban_Ten" ColumnName="Ban_Ten" />
+          <ScalarProperty Name="Ban_Loai" ColumnName="Ban_Loai" />
+          <ScalarProperty Name="Ban_SoNguoi" ColumnName="Ban_SoNguoi" />
+          <ScalarProperty Name="Ban_TrangThai" ColumnName="Ban_TrangThai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChiTietDonNhaps">
+      <EntityTypeMapping TypeName="DBModels.ChiTietDonNhap">
+        <MappingFragment StoreEntitySet="ChiTietDonNhap">
+          <ScalarProperty Name="CTDonNhap_ID" ColumnName="CTDonNhap_ID" />
+          <ScalarProperty Name="DonNhap_ID" ColumnName="DonNhap_ID" />
+          <ScalarProperty Name="NL_ID" ColumnName="NL_ID" />
+          <ScalarProperty Name="ChiTietDon_SoLuong" ColumnName="ChiTietDon_SoLuong" />
+          <ScalarProperty Name="ChiTietDon_DonViTinh" ColumnName="ChiTietDon_DonViTinh" />
+          <ScalarProperty Name="ChiTietDon_DonGia" ColumnName="ChiTietDon_DonGia" />
+          <ScalarProperty Name="ChiTietDon_ThanhTien" ColumnName="ChiTietDon_ThanhTien" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChiTietHoaDons">
+      <EntityTypeMapping TypeName="DBModels.ChiTietHoaDon">
+        <MappingFragment StoreEntitySet="ChiTietHoaDon">
+          <ScalarProperty Name="CTHoaDon_ID" ColumnName="CTHoaDon_ID" />
+          <ScalarProperty Name="HoaDon_ID" ColumnName="HoaDon_ID" />
+          <ScalarProperty Name="MonAn_ID" ColumnName="MonAn_ID" />
+          <ScalarProperty Name="ChiTietHD_SoLuong" ColumnName="ChiTietHD_SoLuong" />
+          <ScalarProperty Name="ChiTietHD_DonGia" ColumnName="ChiTietHD_DonGia" />
+          <ScalarProperty Name="ChiTietHD_GhiChu" ColumnName="ChiTietHD_GhiChu" />
+          <ScalarProperty Name="ChiTietHD_TrangThai" ColumnName="ChiTietHD_TrangThai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChiTietMonAns">
+      <EntityTypeMapping TypeName="DBModels.ChiTietMonAn">
+        <MappingFragment StoreEntitySet="ChiTietMonAn">
+          <ScalarProperty Name="CTMonAn_ID" ColumnName="CTMonAn_ID" />
+          <ScalarProperty Name="MonAn_ID" ColumnName="MonAn_ID" />
+          <ScalarProperty Name="NL_ID" ColumnName="NL_ID" />
+          <ScalarProperty Name="ChiTietMonAn_SoLuong" ColumnName="ChiTietMonAn_SoLuong" />
+          <ScalarProperty Name="ChiTietMonAn_DonViTinh" ColumnName="ChiTietMonAn_DonViTinh" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DonNhapNguyenLieux">
+      <EntityTypeMapping TypeName="DBModels.DonNhapNguyenLieu">
+        <MappingFragment StoreEntitySet="DonNhapNguyenLieu">
+          <ScalarProperty Name="DonNhap_ID" ColumnName="DonNhap_ID" />
+          <ScalarProperty Name="DonNhap_NgayNhap" ColumnName="DonNhap_NgayNhap" />
+          <ScalarProperty Name="DonNhap_TongTien" ColumnName="DonNhap_TongTien" />
+          <ScalarProperty Name="NCC_ID" ColumnName="NCC_ID" />
+          <ScalarProperty Name="NV_ID" ColumnName="NV_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HoaDons">
+      <EntityTypeMapping TypeName="DBModels.HoaDon">
+        <MappingFragment StoreEntitySet="HoaDon">
+          <ScalarProperty Name="HoaDon_ID" ColumnName="HoaDon_ID" />
+          <ScalarProperty Name="NV_ID" ColumnName="NV_ID" />
+          <ScalarProperty Name="Ban_ID" ColumnName="Ban_ID" />
+          <ScalarProperty Name="HoaDon_ThoiGianVao" ColumnName="HoaDon_ThoiGianVao" />
+          <ScalarProperty Name="HoaDon_ThoiGianRa" ColumnName="HoaDon_ThoiGianRa" />
+          <ScalarProperty Name="HoaDon_TongTien" ColumnName="HoaDon_TongTien" />
+          <ScalarProperty Name="HoaDon_TrangThai" ColumnName="HoaDon_TrangThai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IDs">
+      <EntityTypeMapping TypeName="DBModels.ID">
+        <MappingFragment StoreEntitySet="ID">
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="NV_ID" ColumnName="NV_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MonAns">
+      <EntityTypeMapping TypeName="DBModels.MonAn">
+        <MappingFragment StoreEntitySet="MonAn">
+          <ScalarProperty Name="MonAn_ID" ColumnName="MonAn_ID" />
+          <ScalarProperty Name="MonAn_Ten" ColumnName="MonAn_Ten" />
+          <ScalarProperty Name="MonAn_DonViTinh" ColumnName="MonAn_DonViTinh" />
+          <ScalarProperty Name="MonAn_Gia" ColumnName="MonAn_Gia" />
+          <ScalarProperty Name="MonAn_HinhAnh" ColumnName="MonAn_HinhAnh" />
+          <ScalarProperty Name="MonAn_Loai" ColumnName="MonAn_Loai" />
+          <ScalarProperty Name="MonAn_TrangThai" ColumnName="MonAn_TrangThai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NguyenLieux">
+      <EntityTypeMapping TypeName="DBModels.NguyenLieu">
+        <MappingFragment StoreEntitySet="NguyenLieu">
+          <ScalarProperty Name="NL_ID" ColumnName="NL_ID" />
+          <ScalarProperty Name="NL_Ten" ColumnName="NL_Ten" />
+          <ScalarProperty Name="NL_DonViTinh" ColumnName="NL_DonViTinh" />
+          <ScalarProperty Name="NL_SoLuong" ColumnName="NL_SoLuong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NhaCungCaps">
+      <EntityTypeMapping TypeName="DBModels.NhaCungCap">
+        <MappingFragment StoreEntitySet="NhaCungCap">
+          <ScalarProperty Name="NCC_ID" ColumnName="NCC_ID" />
+          <ScalarProperty Name="NCC_Ten" ColumnName="NCC_Ten" />
+          <ScalarProperty Name="NCC_DiaChi" ColumnName="NCC_DiaChi" />
+          <ScalarProperty Name="NCC_SDT" ColumnName="NCC_SDT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NhanViens">
+      <EntityTypeMapping TypeName="DBModels.NhanVien">
+        <MappingFragment StoreEntitySet="NhanVien">
+          <ScalarProperty Name="NV_ID" ColumnName="NV_ID" />
+          <ScalarProperty Name="NV_Ten" ColumnName="NV_Ten" />
+          <ScalarProperty Name="NV_ChucVu" ColumnName="NV_ChucVu" />
+          <ScalarProperty Name="NV_SDT" ColumnName="NV_SDT" />
+          <ScalarProperty Name="NV_DiaChi" ColumnName="NV_DiaChi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NuocUongs">
+      <EntityTypeMapping TypeName="DBModels.NuocUong">
+        <MappingFragment StoreEntitySet="NuocUong">
+          <ScalarProperty Name="Nuoc_ID" ColumnName="Nuoc_ID" />
+          <ScalarProperty Name="Nuoc_Ten" ColumnName="Nuoc_Ten" />
+          <ScalarProperty Name="Nuoc_DonViTinh" ColumnName="Nuoc_DonViTinh" />
+          <ScalarProperty Name="Nuoc_HinhAnh" ColumnName="Nuoc_HinhAnh" />
+          <ScalarProperty Name="Nuoc_Gia" ColumnName="Nuoc_Gia" />
+          <ScalarProperty Name="Nuoc_TrangThai" ColumnName="Nuoc_TrangThai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
